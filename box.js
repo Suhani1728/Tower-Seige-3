@@ -1,7 +1,7 @@
 class Box extends BaseClass {
     constructor(x, y,width,height){
       super(x,y,width,height);
-    this.visibility=255;
+    this.Visiblity=255;
     }
   
     display(){
@@ -17,13 +17,13 @@ class Box extends BaseClass {
        push();
        this.Visiblity = this.Visiblity - 5;
        tint(255,this.Visiblity);
-       image(this.image, this.body.position.x, this.body.position.y, 50, 50);
+       //image(this.image, this.body.position.x, this.body.position.y, 50, 50);
        pop();
       }
     }
 
     score(){
-      if(this.Visiblity<0 && this.Visiblity>=-500)
+      if(this.Visiblity<0 && this.Visiblity>=-100)
       score++
     }
  }
